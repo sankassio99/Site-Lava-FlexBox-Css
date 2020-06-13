@@ -1,0 +1,231 @@
+body, ul, li ,p, h5 {
+    margin: 0px;
+    padding: 0px ;
+    list-style: none; /*Tira o indentação da lista*/
+    font-size: 1,2em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+}
+
+body {
+    background-color: #052021 ;
+}
+body h2 {
+    font-size: 200% ;
+    margin-bottom: 0px ;
+}
+body h3 {
+    font-size: 1.5em ;
+    margin-bottom: 0px ;
+}
+.header {
+    background-image: url("img/back4.jpg");
+    background-size: 100% ;
+    background-repeat: no-repeat ;
+    padding-bottom: 15em ;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+    padding: 20px ;
+}
+.menu .logo {
+    text-decoration: none ;
+    font-family: Georgia, 'Times New Roman', Times, serif ;
+    color: white ;
+    font-size: 45px;
+}
+
+.menu .nav {
+    display: flex ;
+    
+}
+
+.menu .nav li a {
+    text-decoration: none ;
+    color: white ;
+    font-size: 15px ;
+    margin-right: 10px ;
+}
+
+.menu .nav li .btnSubs {
+    padding: 5px ;
+    border: 1px solid white;
+}
+@media only screen and (max-width: 600px) {
+    .header {
+        height: 0px ;
+        padding-bottom: 350px;
+    }
+}
+/*Logo background*/
+
+.title {
+    padding-top: 7% ;
+    margin-left: 20% ;
+}
+.title h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 6em ;
+    margin-bottom: 0px ;
+}
+.title h5 {
+    margin: 0px;
+    font-size: 1.8em ;
+}
+.title .bar {
+    width: 100px;
+    height: 10px;
+    border-radius: 5px ;
+    background-color: black ;
+}
+@media only screen and (max-width: 600px){
+    .title {
+        padding-top: 0%;
+        margin: 0 ;
+        text-align: center;
+    }
+    .title h1{
+        font-size:4em;
+    }
+    .title h5 {
+        font-size: 1em;
+    }
+    .title .bar {
+        margin: 0 auto ;
+        width: 50px;
+        height: 5px;
+        border-radius: 5px ;
+        background-color: black ;
+    }
+}
+
+/*SECTION TEXT*/
+.about {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    color: #CDC7D9 ;
+    margin: 0 auto ;
+}
+.about .bar {
+    width: 60px;
+    height: 5px;
+    border-radius: 5px ;
+    background-color: #CDC7D9 ;
+    margin: 0 auto ;
+}
+.about h5 {
+    padding-bottom: 0px ;
+    margin: 10px  ;
+    font-size: 1em ;
+}
+.about p {
+    width: 40%;
+    margin: 0 auto ;
+    margin-top: 0em ;
+}
+@media only screen and (max-width: 600px) {
+    .about {
+        padding-top: 0px ;
+        margin-top: 0px ;
+    }
+    .about p {
+        width: 96% ;
+    }
+}
+
+/*Cards*/
+.articles {
+    display: flex ;
+    width: 80%;
+    margin: 1em auto ;
+    flex-wrap: wrap;
+    justify-content: center ;
+    padding-bottom: 5em ;
+}
+.about .articles .card {
+    width: 280px ;
+    height: 350px ;
+    margin: 6px ;
+    border: 1px solid black;
+    box-shadow: 2px 0px 10px black;
+    background-repeat: no-repeat;
+    
+}
+.about .articles > div:nth-child(1){
+    background-image: url("img/01.jpg");
+    background-size: 100%;
+}
+.about .articles > div:nth-child(2){
+    background-image: url("img/02.jpg");
+    background-size: 100%;
+}
+.about .articles > div:nth-child(3){
+    background-image: url("img/03.jpg");
+    background-size: 100%;
+}
+
+.about .articles .card:hover {
+    transition: 1s ;
+    width: 310px ;
+    background-size: 105%;
+}
+.desc {
+    margin-top: 91% ;
+    background-color: rgba(10,23,55,0.5) ;
+    margin-bottom:  0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+}
+@media only screen and (max-width: 600px){
+    .articles {
+        margin: 0 ;
+        width: 100% ;
+    }
+    .about .articles .card {
+        width: 90%;
+    }
+    .desc {
+        margin-top: 60%;
+    }
+}
+
+/*SUBSCRIBE*/
+.subscribe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    padding-bottom: 100px ;
+    padding-top: 0px ;
+}
+.input {
+    margin: 15px auto ;
+    padding: 13px;
+    width: 400px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #297365;
+    color: #052021;
+    border: 0px solid #297365;
+}
+
+.button {
+    margin: 15px auto ;
+    width: 110px ;
+    color: white ;
+    border: 1px solid white;
+    background-color: #052021;
+    padding: 10px ;
+    border-radius: 3px ;
+}
+@media (max-width:600px){
+    .input {
+        width: 90%;  
+    }
+}
+
+/*FOOTER*/
+.footer {
+    padding: 80px ;
+    background-color: #297365;
+}
